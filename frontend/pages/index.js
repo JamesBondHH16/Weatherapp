@@ -80,7 +80,7 @@ async function fetchWeather(latitude, longitude, locationName = null) {
 
 		const response = await fetch(`${API_BASE}/weather?latitude=${latitude}&longitude=${longitude}`);
 		if (!response.ok) {
-			throw new Error('Failed to fetch weather data.');
+			throw new Error('Wetterdaten konnten nicht abgerufen werden');
 		}
 
 		const data = await response.json();
@@ -92,7 +92,7 @@ async function fetchWeather(latitude, longitude, locationName = null) {
 		displayWeather(data);
 		fetchWarnings(latitude, longitude);
 	} catch (error) {
-		showError('Error fetching weather data: ' + error.message);
+		showError('Fehler beim Abrufen der Wetterdaten: ' + error.message);
 		console.error(error);
 	} finally {
 		showLoading(false);
