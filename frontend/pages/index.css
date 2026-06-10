@@ -1,0 +1,249 @@
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			min-height: 100vh;
+			padding: 20px;
+		}
+
+		.container {
+			max-width: 900px;
+			margin: 0 auto;
+		}
+
+		.header {
+			text-align: center;
+			color: black;
+			margin-bottom: 30px;
+		}
+
+		.header h1 {
+			font-size: 2.5em;
+			margin-bottom: 10px;
+		}
+
+		.search-section {
+			display: flex;
+			gap: 10px;
+			margin-bottom: 30px;
+			justify-content: center;
+		}
+
+		.search-section input {
+			padding: 12px 16px;
+			border-color: gray;
+			color: black;
+			border-style: solid;
+			border-radius: 8px;
+			font-size: 1em;
+			width: 250px;
+		}
+
+		.search-section button {
+			padding: 12px 24px;
+			background-color: #ff6b6b;
+			color: black;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+			font-size: 1em;
+			font-weight: 600;
+			transition: background-color 0.3s;
+		}
+
+		.search-section button:hover {
+			background-color: #ff5252;
+		}
+
+		#warningsContainer {
+			margin-top: 20px;
+		}
+
+		.warnings-loading,
+		.warnings-empty,
+		.warnings-error {
+			background: rgba(255, 255, 255, 0.9);
+			border-radius: 12px;
+			padding: 18px 22px;
+			margin-bottom: 20px;
+			color: #333;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+		}
+
+		.warning-card {
+			background: #fff;
+			border-radius: 14px;
+			padding: 18px;
+			margin-bottom: 16px;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+		}
+
+		.warning-card h4 {
+			margin-bottom: 8px;
+			color: #222;
+		}
+
+		.warning-card p {
+			color: #555;
+			line-height: 1.5;
+			margin-bottom: 8px;
+		}
+
+		.warnings-header {
+			margin-bottom: 18px;
+		}
+
+		.warnings-header h3 {
+			margin-bottom: 6px;
+		}
+
+		.current-weather {
+			background: white;
+			border-radius: 16px;
+			padding: 30px;
+			margin-bottom: 30px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+		}
+
+		.weather-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: start;
+			margin-bottom: 20px;
+		}
+
+		.location-info h2 {
+			color: #333;
+			margin-bottom: 5px;
+		}
+
+		.location-info p {
+			color: #666;
+			font-size: 0.95em;
+		}
+
+		.current-temp {
+			font-size: 3em;
+			color: #667eea;
+			font-weight: bold;
+		}
+
+		.weather-details {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			gap: 20px;
+			margin-top: 20px;
+		}
+
+		.detail-card {
+			background: #f8f9fa;
+			padding: 15px;
+			border-radius: 8px;
+			text-align: center;
+		}
+
+		.detail-card label {
+			display: block;
+			color: #666;
+			font-size: 0.9em;
+			margin-bottom: 5px;
+		}
+
+		.detail-card .value {
+			font-size: 1.5em;
+			color: #333;
+			font-weight: 600;
+		}
+
+		.hourly-forecast {
+			background: white;
+			border-radius: 16px;
+			padding: 30px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+		}
+
+		.hourly-forecast h3 {
+			color: #333;
+			margin-bottom: 20px;
+			font-size: 1.5em;
+		}
+
+		.hourly-container {
+			display: flex;
+			overflow-x: auto;
+			gap: 15px;
+			padding-bottom: 10px;
+		}
+
+		.hourly-card {
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			padding: 20px;
+			border-radius: 12px;
+			flex-shrink: 0;
+			min-width: 140px;
+			text-align: center;
+		}
+
+		.hourly-card .time {
+			font-size: 0.95em;
+			margin-bottom: 10px;
+			opacity: 0.9;
+		}
+
+		.hourly-card .temp {
+			font-size: 1.8em;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.hourly-card .rain {
+			font-size: 0.9em;
+			opacity: 0.8;
+		}
+
+		.loading {
+			text-align: center;
+			color: gray;
+			font-size: 1.2em;
+		}
+
+		.error {
+			background: #ff6b6b;
+			color: white;
+			padding: 20px;
+			border-radius: 8px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		@media (max-width: 600px) {
+			.header h1 {
+				font-size: 1.8em;
+			}
+
+			.search-section {
+				flex-direction: column;
+			}
+
+			.search-section input {
+				width: 100%;
+			}
+
+			.weather-header {
+				flex-direction: column;
+			}
+
+			.current-temp {
+				font-size: 2.5em;
+			}
+
+			.current-weather,
+			.hourly-forecast {
+				padding: 20px;
+			}
+		}
