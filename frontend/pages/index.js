@@ -118,12 +118,12 @@ function displayWeather(data) {
 					<p>Koordinaten: ${Math.round(latitude * 10) / 10}°N, ${Math.round(longitude * 10) / 10}°E</p>
 					<p>Elevation: ${elevation} m</p>
 				</div>
-				<div class="current-temp">${Math.round(temperature * 1000) / 1000}°C</div>
+				<div class="current-temp">${Math.round(temperature)}°C</div>
 			</div>
 			<div class="weather-details">
 				<div class="detail-card">
 					<label>Aktuelle Temperatur</label>
-					<div class="value">${Math.round(temperature * 1000) / 1000}°C</div>
+					<div class="value">${Math.round(temperature)}°C</div>
 				</div>
 				<div class="detail-card">
 					<label>Niederschlag</label>
