@@ -203,7 +203,7 @@ async def search_location(location: str):
 				params={
 					"name": location,
 					"count": 1,
-					"language": "en",
+					"language": "de",
 					"format": "json"
 				}
 			)
