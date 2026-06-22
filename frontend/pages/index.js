@@ -1,7 +1,7 @@
 const API_BASE = 'http://localhost:8000';
 let currentLat = 52.52;
 let currentLon = 13.41;
-let currentLocationName = 'Berlin, Germany';
+let currentLocationName = 'Hodenhagen, Germany';
 let forecastChartInstance = null;
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -116,7 +116,7 @@ function displayWeather(data) {
 				<div class="location-info">
 					<h2 id="locationName">${currentLocationName}</h2>
 					<p>Koordinaten: ${Math.round(latitude * 10) / 10}°N, ${Math.round(longitude * 10) / 10}°E</p>
-					<p>Elevation: ${elevation} m</p>
+					<p>Höhe: ${elevation} m</p>
 				</div>
 				<div class="current-temp">${Math.round(temperature)}°C</div>
 			</div>
