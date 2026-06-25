@@ -8,6 +8,7 @@
 			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 			min-height: 100vh;
 			padding: 20px;
+			background-color: #000;
 		}
 
 		.container {
@@ -17,8 +18,15 @@
 
 		.header {
 			text-align: center;
-			color: black;
+			color: #fe84ff;
 			margin-bottom: 30px;
+		}
+
+		.logo {
+			position: fixed;
+			top: 0;
+    		left: 0;
+    		width: 100px;
 		}
 
 		.header h1 {
@@ -35,7 +43,7 @@
 
 		.search-section input {
 			padding: 12px 16px;
-			border-color: gray;
+			border-color: darkgrey;
 			color: black;
 			border-style: solid;
 			border-radius: 8px;
@@ -45,8 +53,8 @@
 
 		.search-section button {
 			padding: 12px 24px;
-			background-color: #ff6b6b;
-			color: black;
+			background-color: #fe84ff;
+			color: #fff;
 			border: none;
 			border-radius: 8px;
 			cursor: pointer;
@@ -56,7 +64,7 @@
 		}
 
 		.search-section button:hover {
-			background-color: #ff5252;
+			background-color: #502950;
 		}
 
 		#warningsContainer {
@@ -102,11 +110,10 @@
 		}
 
 		.current-weather {
-			background: white;
+			background: #111;
 			border-radius: 16px;
 			padding: 30px;
 			margin-bottom: 30px;
-			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 		}
 
 		.weather-header {
@@ -117,18 +124,18 @@
 		}
 
 		.location-info h2 {
-			color: #333;
+			color: #fe84ff;
 			margin-bottom: 5px;
 		}
 
 		.location-info p {
-			color: #666;
+			color: #a254a3;
 			font-size: 0.95em;
 		}
 
 		.current-temp {
 			font-size: 3em;
-			color: #667eea;
+			color: #FFF;
 			font-weight: bold;
 		}
 
@@ -140,7 +147,7 @@
 		}
 
 		.detail-card {
-			background: #f8f9fa;
+			background: #fe84ff;
 			padding: 15px;
 			border-radius: 8px;
 			text-align: center;
@@ -148,26 +155,25 @@
 
 		.detail-card label {
 			display: block;
-			color: #666;
+			color: #FFF;
 			font-size: 0.9em;
 			margin-bottom: 5px;
 		}
 
 		.detail-card .value {
 			font-size: 1.5em;
-			color: #333;
+			color: #000;
 			font-weight: 600;
 		}
 
 		.hourly-forecast {
-			background: white;
+			background: #222;
 			border-radius: 16px;
 			padding: 30px;
-			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 		}
 
 		.hourly-forecast h3 {
-			color: #333;
+			color: #FFF;
 			margin-bottom: 20px;
 			font-size: 1.5em;
 		}
