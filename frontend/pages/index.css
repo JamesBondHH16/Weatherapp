@@ -22,13 +22,6 @@
 			margin-bottom: 30px;
 		}
 
-		.logo {
-			position: fixed;
-			top: 0;
-    		left: 0;
-    		width: 100px;
-		}
-
 		.header h1 {
 			font-size: 2.5em;
 			margin-bottom: 10px;
@@ -148,6 +141,7 @@
 
 		.detail-card {
 			background: #fe84ff;
+			color: #FFF;
 			padding: 15px;
 			border-radius: 8px;
 			text-align: center;
@@ -162,12 +156,12 @@
 
 		.detail-card .value {
 			font-size: 1.5em;
-			color: #000;
+			color: #FFF;
 			font-weight: 600;
 		}
 
 		.hourly-forecast {
-			background: #222;
+			background: #111;
 			border-radius: 16px;
 			padding: 30px;
 		}
@@ -186,7 +180,7 @@
 		}
 
 		.hourly-card {
-			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			background: #fe84ff;
 			color: white;
 			padding: 20px;
 			border-radius: 12px;
